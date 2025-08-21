@@ -1,0 +1,27 @@
+{
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": ["./**/*.blade.php"],
+            "options": {
+                "parser": "blade"
+            }
+        },
+        {
+            "files": ["./**/*.yml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ],
+    "importOrder": ["^react-scan/(.*)$", "<THIRD_PARTY_MODULES>", "^@/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "plugins": ["prettier-plugin-blade", "@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+    "printWidth": 120,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "tailwindFunctions": ["clsx", "cn"],
+    "tailwindStylesheet": "./resources/css/app.css",
+    "trailingComma": "none"
+}
