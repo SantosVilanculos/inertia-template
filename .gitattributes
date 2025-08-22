@@ -7,5 +7,6 @@
 *.php diff=php
 
 *.ico binary
+*.png binary
 
 CHANGELOG.md export-ignore
